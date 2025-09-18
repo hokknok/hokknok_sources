@@ -7,7 +7,7 @@ class Solution:
 
         for i in range(len(recword)):
             for j in range(i, len(sequence)):
-                print("i =", i, "j =", j, "recword[i] =", recword[i], "sequence[j]", sequence[j])
+                print("i = ", i, "j = ", j, "recword[i] =", recword[i], "sequence[j]", sequence[j])
                 if recword[i] == sequence[j] and count[j - i] == i:
                     count[j - i] += 1
                 elif count[j - i] < len(word):
