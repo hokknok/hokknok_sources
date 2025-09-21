@@ -1,0 +1,1124 @@
+/usr/bin/python3 /Users/gromstorm/Documents/My_Python_Projects/hokknok_sources/1668. Maximum Repeating Substring.py
+j =  0
+i =  0
+index =  0
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  0
+i =  1
+index =  0
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  0
+i =  2
+index =  0
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  0
+i =  3
+index =  0
+dp_indx =  3
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  0
+i =  4
+index =  0
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  1
+i =  1
+index =  1
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  1
+i =  2
+index =  1
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  1
+i =  3
+index =  1
+dp_indx =  2
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  1
+i =  4
+index =  1
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  1
+i =  5
+index =  1
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  2
+i =  2
+index =  2
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  2
+i =  3
+index =  2
+dp_indx =  1
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  2
+i =  4
+index =  2
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  2
+i =  5
+index =  2
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  2
+i =  6
+index =  2
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  3
+i =  3
+index =  3
+dp_indx =  0
+word[index] =  b sequence[i] =  b
+1 dp[dp_indx] =  3
+2 dp[dp_indx] =  4
+j =  3
+i =  4
+index =  3
+dp_indx =  1
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  3
+i =  5
+index =  3
+dp_indx =  2
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  3
+i =  6
+index =  3
+dp_indx =  3
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  3
+i =  7
+index =  3
+dp_indx =  4
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  4
+i =  4
+index =  4
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  4
+2 dp[dp_indx] =  5
+j =  4
+i =  5
+index =  4
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  4
+i =  6
+index =  4
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  4
+i =  7
+index =  4
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  4
+i =  8
+index =  4
+dp_indx =  4
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  5
+i =  5
+index =  0
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  5
+2 dp[dp_indx] =  6
+j =  5
+i =  6
+index =  0
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  5
+i =  7
+index =  0
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  5
+i =  8
+index =  0
+dp_indx =  3
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  5
+i =  9
+index =  0
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  6
+i =  6
+index =  1
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  6
+2 dp[dp_indx] =  7
+j =  6
+i =  7
+index =  1
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  6
+i =  8
+index =  1
+dp_indx =  2
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  6
+i =  9
+index =  1
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  6
+i =  10
+index =  1
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  7
+i =  7
+index =  2
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  7
+2 dp[dp_indx] =  8
+j =  7
+i =  8
+index =  2
+dp_indx =  1
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  7
+i =  9
+index =  2
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  7
+i =  10
+index =  2
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  7
+i =  11
+index =  2
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  8
+i =  8
+index =  3
+dp_indx =  0
+word[index] =  b sequence[i] =  b
+1 dp[dp_indx] =  8
+2 dp[dp_indx] =  9
+j =  8
+i =  9
+index =  3
+dp_indx =  1
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  8
+i =  10
+index =  3
+dp_indx =  2
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  8
+i =  11
+index =  3
+dp_indx =  3
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  8
+i =  12
+index =  3
+dp_indx =  4
+word[index] =  b sequence[i] =  b
+1 dp[dp_indx] =  3
+2 dp[dp_indx] =  4
+j =  9
+i =  9
+index =  4
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  9
+2 dp[dp_indx] =  10
+j =  9
+i =  10
+index =  4
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  9
+i =  11
+index =  4
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  9
+i =  12
+index =  4
+dp_indx =  3
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  9
+i =  13
+index =  4
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  4
+2 dp[dp_indx] =  5
+j =  10
+i =  10
+index =  0
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  10
+2 dp[dp_indx] =  11
+j =  10
+i =  11
+index =  0
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  10
+i =  12
+index =  0
+dp_indx =  2
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  10
+i =  13
+index =  0
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  10
+i =  14
+index =  0
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  5
+2 dp[dp_indx] =  6
+j =  11
+i =  11
+index =  1
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  11
+2 dp[dp_indx] =  12
+j =  11
+i =  12
+index =  1
+dp_indx =  1
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  11
+i =  13
+index =  1
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  11
+i =  14
+index =  1
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  11
+i =  15
+index =  1
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  6
+2 dp[dp_indx] =  7
+j =  12
+i =  12
+index =  2
+dp_indx =  0
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  12
+22 dp[dp_indx] =  0
+j =  12
+i =  13
+index =  2
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  12
+i =  14
+index =  2
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  12
+i =  15
+index =  2
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  12
+i =  16
+index =  2
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  7
+2 dp[dp_indx] =  8
+j =  13
+i =  13
+index =  3
+dp_indx =  0
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  13
+i =  14
+index =  3
+dp_indx =  1
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  13
+i =  15
+index =  3
+dp_indx =  2
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  13
+i =  16
+index =  3
+dp_indx =  3
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  13
+i =  17
+index =  3
+dp_indx =  4
+word[index] =  b sequence[i] =  b
+1 dp[dp_indx] =  8
+2 dp[dp_indx] =  9
+j =  14
+i =  14
+index =  4
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  14
+i =  15
+index =  4
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  14
+i =  16
+index =  4
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  14
+i =  17
+index =  4
+dp_indx =  3
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  14
+i =  18
+index =  4
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  9
+2 dp[dp_indx] =  10
+j =  15
+i =  15
+index =  0
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  15
+i =  16
+index =  0
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  15
+i =  17
+index =  0
+dp_indx =  2
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  15
+i =  18
+index =  0
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  15
+i =  19
+index =  0
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  10
+2 dp[dp_indx] =  11
+j =  16
+i =  16
+index =  1
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  16
+i =  17
+index =  1
+dp_indx =  1
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  16
+i =  18
+index =  1
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  16
+i =  19
+index =  1
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  16
+i =  20
+index =  1
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  11
+2 dp[dp_indx] =  12
+j =  17
+i =  17
+index =  2
+dp_indx =  0
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  17
+i =  18
+index =  2
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  17
+i =  19
+index =  2
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  17
+i =  20
+index =  2
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  17
+i =  21
+index =  2
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  12
+2 dp[dp_indx] =  13
+j =  18
+i =  18
+index =  3
+dp_indx =  0
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  18
+i =  19
+index =  3
+dp_indx =  1
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  18
+i =  20
+index =  3
+dp_indx =  2
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  18
+i =  21
+index =  3
+dp_indx =  3
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  18
+i =  22
+index =  3
+dp_indx =  4
+word[index] =  b sequence[i] =  b
+1 dp[dp_indx] =  13
+2 dp[dp_indx] =  14
+j =  19
+i =  19
+index =  4
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  19
+i =  20
+index =  4
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  19
+i =  21
+index =  4
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  19
+i =  22
+index =  4
+dp_indx =  3
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  19
+i =  23
+index =  4
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  14
+2 dp[dp_indx] =  15
+j =  20
+i =  20
+index =  0
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  20
+i =  21
+index =  0
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  20
+i =  22
+index =  0
+dp_indx =  2
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  20
+i =  23
+index =  0
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  20
+i =  24
+index =  0
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  15
+2 dp[dp_indx] =  16
+j =  21
+i =  21
+index =  1
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  21
+i =  22
+index =  1
+dp_indx =  1
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  21
+i =  23
+index =  1
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  21
+i =  24
+index =  1
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  21
+i =  25
+index =  1
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  16
+2 dp[dp_indx] =  17
+j =  22
+i =  22
+index =  2
+dp_indx =  0
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  22
+i =  23
+index =  2
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  22
+i =  24
+index =  2
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  22
+i =  25
+index =  2
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  22
+i =  26
+index =  2
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  17
+2 dp[dp_indx] =  18
+j =  23
+i =  23
+index =  3
+dp_indx =  0
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  23
+i =  24
+index =  3
+dp_indx =  1
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  23
+i =  25
+index =  3
+dp_indx =  2
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  23
+i =  26
+index =  3
+dp_indx =  3
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  23
+i =  27
+index =  3
+dp_indx =  4
+word[index] =  b sequence[i] =  b
+1 dp[dp_indx] =  18
+2 dp[dp_indx] =  19
+j =  24
+i =  24
+index =  4
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  24
+i =  25
+index =  4
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  24
+i =  26
+index =  4
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  24
+i =  27
+index =  4
+dp_indx =  3
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  24
+i =  28
+index =  4
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  19
+2 dp[dp_indx] =  20
+j =  25
+i =  25
+index =  0
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  25
+i =  26
+index =  0
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  25
+i =  27
+index =  0
+dp_indx =  2
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  25
+i =  28
+index =  0
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  25
+i =  29
+index =  0
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  20
+2 dp[dp_indx] =  21
+j =  26
+i =  26
+index =  1
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  26
+i =  27
+index =  1
+dp_indx =  1
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  26
+i =  28
+index =  1
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  26
+i =  29
+index =  1
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  26
+i =  30
+index =  1
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  21
+2 dp[dp_indx] =  22
+j =  27
+i =  27
+index =  2
+dp_indx =  0
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  27
+i =  28
+index =  2
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  27
+i =  29
+index =  2
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  27
+i =  30
+index =  2
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  27
+i =  31
+index =  2
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  22
+2 dp[dp_indx] =  23
+j =  28
+i =  28
+index =  3
+dp_indx =  0
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  28
+i =  29
+index =  3
+dp_indx =  1
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  28
+i =  30
+index =  3
+dp_indx =  2
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  28
+i =  31
+index =  3
+dp_indx =  3
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  28
+i =  32
+index =  3
+dp_indx =  4
+word[index] =  b sequence[i] =  b
+1 dp[dp_indx] =  23
+2 dp[dp_indx] =  24
+j =  29
+i =  29
+index =  4
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  29
+i =  30
+index =  4
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  29
+i =  31
+index =  4
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  29
+i =  32
+index =  4
+dp_indx =  3
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  29
+i =  33
+index =  4
+dp_indx =  4
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  24
+2 dp[dp_indx] =  25
+j =  30
+i =  30
+index =  0
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  30
+i =  31
+index =  0
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  30
+i =  32
+index =  0
+dp_indx =  2
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  30
+i =  33
+index =  0
+dp_indx =  3
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  31
+i =  31
+index =  1
+dp_indx =  0
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  31
+i =  32
+index =  1
+dp_indx =  1
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  2
+22 dp[dp_indx] =  0
+j =  31
+i =  33
+index =  1
+dp_indx =  2
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  32
+i =  32
+index =  2
+dp_indx =  0
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  32
+i =  33
+index =  2
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  33
+i =  33
+index =  3
+dp_indx =  0
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+2
+
+Process finished with exit code 0
