@@ -32,16 +32,16 @@ class Solution:
                 dp_indx = i - j
                 print("dp_indx = ", dp_indx)
                 print("word[index] = ", word[index], "sequence[i] = ", sequence[i])
-                if word[index] == sequence[i]:
+                if word[index] == sequence[i] and (index == 0 or dp[dp_indx] != 0):
                     print("1 dp[dp_indx] = ", dp[dp_indx])
                     dp[dp_indx] += 1
                     print("2 dp[dp_indx] = ", dp[dp_indx])
                 else:
                     print("11 dp[dp_indx] = ", dp[dp_indx])
-                    if dp[dp_indx]//len(word) > mxrptng:
-                        mxrptng = dp[dp_indx]//len(word)
                     dp[dp_indx] = 0
                     print("22 dp[dp_indx] = ", dp[dp_indx])
+                if dp[dp_indx] // len(word) > mxrptng:
+                    mxrptng = dp[dp_indx] // len(word)
             j += 1
 
         return mxrptng
@@ -51,8 +51,10 @@ def main():
     repeating = Solution()
     sequence = "aaabaaaabaaabaaaabaaaabaaaabaaaaba"
     word = "aaaba"
-    #sequence = "ababc"
-    #word = "ab"
+    # sequence = "ababc"
+    # word = "ab"
+    #sequence = "bacacbc"
+    #word = "cba"
 
     print(repeating.maxRepeating(sequence, word))
 
