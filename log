@@ -1,0 +1,130 @@
+/usr/bin/python3 /Users/gromstorm/Documents/My_Python_Projects/hokknok_sources/1668. Maximum Repeating Substring.py
+j =  0
+i =  0
+index =  0
+dp_indx =  0
+word[index] =  c sequence[i] =  b
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  0
+i =  1
+index =  0
+dp_indx =  1
+word[index] =  c sequence[i] =  a
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  0
+i =  2
+index =  0
+dp_indx =  2
+word[index] =  c sequence[i] =  c
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  1
+i =  1
+index =  1
+dp_indx =  0
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  1
+i =  2
+index =  1
+dp_indx =  1
+word[index] =  b sequence[i] =  c
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  1
+i =  3
+index =  1
+dp_indx =  2
+word[index] =  b sequence[i] =  a
+11 dp[dp_indx] =  1
+22 dp[dp_indx] =  0
+j =  2
+i =  2
+index =  2
+dp_indx =  0
+word[index] =  a sequence[i] =  c
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  2
+i =  3
+index =  2
+dp_indx =  1
+word[index] =  a sequence[i] =  a
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+j =  2
+i =  4
+index =  2
+dp_indx =  2
+word[index] =  a sequence[i] =  c
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  3
+i =  3
+index =  0
+dp_indx =  0
+word[index] =  c sequence[i] =  a
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  3
+i =  4
+index =  0
+dp_indx =  1
+word[index] =  c sequence[i] =  c
+1 dp[dp_indx] =  1
+2 dp[dp_indx] =  2
+j =  3
+i =  5
+index =  0
+dp_indx =  2
+word[index] =  c sequence[i] =  b
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  4
+i =  4
+index =  1
+dp_indx =  0
+word[index] =  b sequence[i] =  c
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  4
+i =  5
+index =  1
+dp_indx =  1
+word[index] =  b sequence[i] =  b
+1 dp[dp_indx] =  2
+2 dp[dp_indx] =  3
+j =  4
+i =  6
+index =  1
+dp_indx =  2
+word[index] =  b sequence[i] =  c
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  5
+i =  5
+index =  2
+dp_indx =  0
+word[index] =  a sequence[i] =  b
+11 dp[dp_indx] =  0
+22 dp[dp_indx] =  0
+j =  5
+i =  6
+index =  2
+dp_indx =  1
+word[index] =  a sequence[i] =  c
+11 dp[dp_indx] =  3
+22 dp[dp_indx] =  0
+j =  6
+i =  6
+index =  0
+dp_indx =  0
+word[index] =  c sequence[i] =  c
+1 dp[dp_indx] =  0
+2 dp[dp_indx] =  1
+1
+
+Process finished with exit code 0
