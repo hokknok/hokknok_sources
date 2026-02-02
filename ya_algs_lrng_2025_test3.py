@@ -11,7 +11,6 @@ def main():
         if str_srtd[i] == pnter:
             j += 1
         else:
-            #print("(len(str_srtd) - 1 - j) * j = ", (len(str_srtd) - j) * j)
             vl += (len(str_srtd) - j) * j
             j = 1
             pnter = str_srtd[i]
