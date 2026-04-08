@@ -24,6 +24,5 @@ def main():
             i -= 1
             break
     print(max(max(dp[i]), maxw, 0))
-
 if __name__ == '__main__':
     main()
