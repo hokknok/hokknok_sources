@@ -2,29 +2,31 @@ import time
 
 
 def way4():
-    # n = 1 + int(input())
+    n = 1 + int(input())
+    dp = [[0] * n for _ in range(n)]  # [x][y] - [x] кол-во кубиков, [y] размер базы;
+    dp[1][1] = 1
+
+    for i in range(2, n, +1):
+        for j in range(i, 0, -1):
+            for ii in range(j - 1, 0, -1):  # i - (i - j) - 1 = j - 1
+                dp[i][j] += dp[i - j][ii]
+            if i == j:
+                dp[i][j] += 1
+
+    # n = int(input())
     # dp = [[0] * n for _ in range(n)]  # [x][y] - [x] кол-во кубиков, [y] размер базы;
-    # dp[1][1] = 1
+    # dp[0][0] = 1
     #
-    # for i in range(2, n, +1):
+    # for i in range(1, n, +1):
     #     for j in range(i, 0, -1):
     #         for ii in range(j - 1, 0, -1):  # i - (i - j) - 1 = j - 1
     #             dp[i][j] += dp[i - j][ii]
     #         if i == j:
     #             dp[i][j] += 1
-
-    n = int(input())
-    dp = [[0] * n for _ in range(n)]  # [x][y] - [x] кол-во кубиков, [y] размер базы;
-    dp[0][0] = 1
-
-    for i in range(1, n, +1):17881966
-        for j in range(i, 0, -1):
-            for ii in range(j - 1, i - j - 1, -1):  # i - (i - j) - 1 = j - 1
-                dp[i][j] += dp[i - j][ii]
-            if i == j:
-                dp[i][j] += 1
-
-    #print(dp)
+    #         elif j - 1 == 0 and i - j == 1:
+    #             dp[i][j] += 1
+    #
+    # print(dp)
     print(sum(dp[n-1]))
 
 
@@ -112,6 +114,6 @@ if __name__ == '__main__':
     start_time = time.time()  # ⏱️ Старт
     way4()
     end_time = time.time()  # ⏱️ Финиш
-    print(f"start_time: {start_time:.4f} сек")  # Вывод времени
-    print(f"end_time: {end_time:.4f} сек")  # Вывод времени
-    print(f"Время выполнения: {end_time - start_time:.4f} сек")  # Вывод времени
+    # print(f"start_time: {start_time:.4f} сек")  # Вывод времени
+    # print(f"end_time: {end_time:.4f} сек")  # Вывод времени
+    # print(f"Время выполнения: {end_time - start_time:.4f} сек")  # Вывод времени
