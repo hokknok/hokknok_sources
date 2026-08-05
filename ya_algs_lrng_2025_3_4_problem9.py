@@ -138,41 +138,27 @@ def check_node(i, j):
 #
 #     print(answ)
 
-def max_2_min():
-    n, m = map(int, input().split())
-    mtrx, vij = [], []
-    dp = [[0] * m for _ in range(n)]
-    answ = 1
-    start = 0
-    for i in range(n):
-        line = list(map(int, input().split()))
-        mtrx.append(line)
-        for j in range(m):
-            vij.append([line[j], i, j])
-    vij = sorted(vij, reverse=True)
-
-    for k in range(n*m):
-        dp[vij[k][1]][vij[k][2]] = 1
-        if k + 1 < m and vij[k + 1] != vij[k]:
-            start = k + 1
-            break
-
-    for k in range(start, n*m):
-        i, j = vij[k][1], vij[k][2]
-        vrs = [[i + 1, j], [i - 1, j], [i, j + 1], [i, j - 1]]
-        for k in vrs:
-            ni, nj = k[0], k[1]
-            if ni >= n or ni < 0 or nj >= m or nj < 0:
-                continue
-            if mtrx[ni][nj] - mtrx[i][j] == 1:
-                dp[i][j] = max(dp[i][j], 1 + dp[ni][nj])
-                answ = max(answ, dp[i][j])
-        dp[i][j] = max(dp[i][j], 1)
-
-    print(answ)
-
-if __name__ == '__main__':
-    # regress()
-    # dfs()
-    #big_small()
-    max_2_min()
+# def max_2_min():
+n, m = map(int, input().split())
+mtrx, vij = [], []
+dp = [[1] * m for _ in range(n)]
+answ = 1
+for i in range(n):
+    line = list(map(int, input().split()))
+    mtrx.append(line)
+    for j in range(m):
+        vij.append([line[j], i, j])
+vij = sorted(vij, reverse=True)
+for k in range(n*m):
+    i, j = vij[k][1], vij[k][2]
+    vrs = [[i + 1, j], [i - 1, j], [i, j + 1], [i, j - 1]]
+    for l in vrs:
+        ni, nj = l[0], l[1]
+        if ni >= n or ni < 0 or nj >= m or nj < 0:
+            continue
+        if mtrx[ni][nj] - mtrx[i][j] == 1:
+            dp[i][j] = max(dp[i][j], 1 + dp[ni][nj])
+            answ = max(answ, dp[i][j])
+print(answ)
+# if __name__ == '__main__':
+#     max_2_min()
